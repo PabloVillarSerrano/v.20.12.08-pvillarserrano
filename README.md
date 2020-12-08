@@ -15,6 +15,7 @@ Para la realización de la web he usado los lenguajes: HTML5, CSS3, PHP y JavaSc
 Los programas de diseño gráfico: Adobe Illustrator y Gimp.
 El dominio y el hosting los tengos contratados con Cdmon y he usado FilleZilla para subir los archivos al servidor.
 Igualmente, tengo incluidos el Firewall y el gestor SSL para garantizar la segurdidad de la página. 
-Para hacer un análisis de las métricas, como ver quién entra en mi página, desde dónde, su edad... utilizo Google Analytics. El código lo tengo incluido también en el index.html
+Para hacer un análisis de las métricas, como ver quién entra en mi página, desde dónde, su edad... utilizo Google Analytics. El código lo tengo incluido también en el index.html.
+Por esto mismo, y por recoger los datos del formulario de contacto, tengo incluido un aviso con la política de privacidad y protección de datos totalmente validado.
 
 Actualmente estoy probando a desarrollar un pequeña base de datos en dicho servidor mediante MySQL y PHPMyAdmin, aunque esto aún no está sincronizado y no está visible. 
