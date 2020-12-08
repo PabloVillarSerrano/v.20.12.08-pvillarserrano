@@ -1,0 +1,702 @@
+ 
+    /* CSS */
+
+    /* GENÉRICOS */
+
+    html, body{
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      scroll-behavior: smooth;
+      color: #777777;
+      font-family: 'Montserrat', 'Helvetica Neue', 'Arial';
+      /*overflow-x: hidden; */
+    }
+    /* LOADER */
+    #loader{
+      background-image: linear-gradient(to right,#1D1D1D,#1D1D1D);
+      background-size: cover;
+      height: 100vh;
+      position: fixed;
+      width: 100%;
+      z-index: 1;
+      overflow: visible;
+    }
+    
+    /* MAIN */
+    .seccnegra{
+      padding-bottom: 15vh; 
+      padding-top: 10vh; 
+      background-color: #1D1D1D;
+    }
+    .barraizq{
+      width: 40px;
+      position: fixed;
+      bottom: 0px;
+      left: 40px;
+      right: auto;
+      z-index: 10;
+      color: var(--light-slate);
+    }
+    .barrader{
+      width: 40px;
+      position: fixed;
+      bottom: 60px;
+      left: auto;
+      right: 40px;
+      z-index: 10;
+      color: var(--light-slate);
+    }
+    .rrss {
+      display: flex;
+      flex-direction: column;
+      -webkit-box-align: center;
+      align-items: center;
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+    }
+    .rrss::after{
+      content: "";
+      display: block;
+      width: 0.05em;
+      height: 90px;
+      margin: 0px auto;
+      background-color: #777777;
+    }
+    .rrssefect{
+      color: #777777
+    }
+    .rrssefect:hover{
+      color: #08fdd8;
+      text-decoration: none;
+    }
+   .correo{
+   margin: 20px auto;
+   padding: 10px;
+   font-family: var(--font-mono);
+   font-size: var(--fz-xxs);
+   letter-spacing: 0.1em;
+   -webkit-writing-mode: vertical-rl;
+   writing-mode: vertical-rl;
+  }
+   .correo::after {
+    content: "";
+    display: block;
+    width: 0.05em;
+    height: 90px;
+    margin: 100% auto;
+    margin-right: -4%;
+    background-color: #777777;
+
+}
+
+    /* HEADER */
+    .intro-2 {
+        background: url("https://www.pvillarserrano.com/pruebasv2/headerblack.png")no-repeat center center;
+        background-size: cover;
+        margin-top: -7%;
+        padding-top: 40%;
+        padding-bottom: 13%;
+    }
+    .intro-3 {
+      background: url("https://www.pvillarserrano.com/pruebasv2/headerblackMOV.png")no-repeat center center;
+      background-size: cover;
+      background-attachment: fixed;
+      height: 600px;
+
+  }
+    /* FLECHA */
+    .arrow{
+      color: #fff;
+      font-size: 2em;
+      padding-right: 7%;
+      padding-top: 10%;
+    }
+    
+    /* TEXTOS */
+    .encabezadosB{
+      font-family: 'Anton', sans-serif;
+      color: rgb(255, 255, 255); 
+      font-size: 3.2em;
+      margin-top: -23%;
+      line-height: 1.2;
+    }
+    .encabezadosBmov{
+      font-family: 'Anton', sans-serif;
+      color: rgb(255, 255, 255); 
+      font-size: 2em;
+      padding-top: 50%;
+      line-height: 1.1;
+    }
+    .encabezadosA{
+      font-family: 'Anton', sans-serif;
+      color: #08fdd8; 
+      font-size: 3em;
+      line-height: 1.2;
+    }
+    .encabezadosAmov{
+      font-family: 'Anton', sans-serif;
+      color: #08fdd8; 
+      font-size: 2.5em;
+      line-height: 1.1;
+    }
+    .parrafosB{
+      font-family: 'Lato', sans-serif;
+      color: rgb(145, 145, 145);
+      font-size: 16px;
+      letter-spacing: 0.2em;
+      text-align: justify;
+      line-height: 1.8;
+    }
+    .parrafosBmov{
+      font-family: 'Lato', sans-serif;
+      color: rgb(145, 145, 145);
+      font-size: 13px;
+      letter-spacing: 0.1em;
+      text-align: left;
+      line-height: 1.3;
+    }
+    .parrafos{
+      font-family: 'Lato', sans-serif;
+      color: rgb(219, 219, 219);
+      font-size: 13px;
+      letter-spacing: 0.2em;
+      text-align: justify;
+    }
+    .parrafosMOVIL{
+      font-family: 'Lato', sans-serif;
+      color: #5b5b5b;
+      font-size: 13px;
+      text-align: justify;
+    }
+    .navtotal{
+      padding-top: 5px; 
+      padding-bottom: 5px; 
+      box-shadow: 0 0px 0px 0 rgba(0,0,0,.16), 0 0px 00px 0 rgba(0,0,0,.12);
+    }
+    .navgen{
+      font-family: 'Lato', sans-serif;
+      color: #fff;
+      font-size: 13px;
+      letter-spacing: 4px;
+    }
+    .navgen:hover{
+      font-family: 'Lato', sans-serif;
+      color: #08fdd8;
+      font-size: 13px;
+      letter-spacing: 4px;
+      text-decoration: none;
+    }
+    .navgenACTIVE{
+      font-family: 'Lato', sans-serif;
+      color: #08fdd8;
+      font-size: 13px;
+      letter-spacing: 4px;
+    }
+    .navgenACTIVE:hover{
+      font-family: 'Lato', sans-serif;
+      color: #08fdd8;
+      font-size: 13px;
+      letter-spacing: 4px;
+      text-decoration: none;
+    }
+
+    /* BOTONES */
+    .botoncta{
+      color: #08fdd8;
+      font-size: 13px;
+      letter-spacing: 4px;
+      font-family: 'Lato', sans-serif;
+      text-decoration: none;
+      padding: 10px 18px;
+      border: 1px solid #08fdd8;
+      margin-top: 25px;
+      float: left;
+      -webkit-animation: myanim2 1s 1.8s backwards;
+      animation: myanim2 1s 1.8s backwards;
+    }
+    .botoncta:hover{
+      color: #1D1D1D;
+      background-color:  #08fdd8;
+      font-size: 13px;
+      letter-spacing: 4px;
+      font-family: 'Lato', sans-serif;
+      text-decoration: none;
+      padding: 10px 18px;
+      border: 1px solid #08fdd8;
+      margin-top: 25px;
+      float: left;
+      -webkit-animation: myanim2 1s 1.8s backwards;
+      animation: myanim2 1s 1.8s backwards;
+    }
+    .botonredondo{
+      background-color: #08fdd8; 
+      color:#1d1d1d; 
+      border: none;
+      width:120px;
+      height:120px; 
+      border-radius: 50%;
+    }
+    .botonredondo:hover{
+      font-weight: 700;
+      background-color: #08fdd8; 
+      color:#1d1d1d; 
+      border: none;
+      width:120px;
+      height:120px; 
+      border-radius: 50%;
+    }
+    /*TIMELINE*/
+    .line{
+        position: absolute;
+        width: 5px;
+        height: 0;
+        background: linear-gradient(#fff, rgba(255,255,255,0));
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transition: 1s;
+        z-index: 0;
+    }
+    .trayectoriaTITLE{
+      font-family: 'Lato', sans-serif;
+      color: #fff;
+      font-size: 14px;
+      letter-spacing: 4px;
+    }
+    .trayectoriaTITLEmov {
+      font-family: 'Lato', sans-serif;
+      color: #fff;
+      font-size: 12px;
+      letter-spacing: 3px;
+      padding-bottom: 5px;
+    }
+    .timeline {
+      position: relative;
+      margin: 0 auto;
+    }
+    /* The actual timeline (the vertical ruler) */
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 2px;
+      background-color: #08fdd8;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
+    }
+    .containerTIME {
+      padding: 10px 40px;
+      position: relative;
+      background-color: inherit;
+      width: 50%;
+    }
+    /* The circles on the timeline */
+    .containerTIME::after {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      right: -10px;
+      background-color: #1D1D1D;
+      border: 2px solid #08fdd8;
+      top: 15px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+    /* Place the container to the left */
+    .leftTIME {
+      left: 0;
+    }
+    /* Place the container to the right */
+    .rightTIME {
+      left: 50%;
+    }
+    /* Add arrows to the left container (pointing right) */
+    .leftTIME::before {
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 22px;
+      width: 0;
+      z-index: 1;
+      right: 30px;
+      border: medium solid #e9e7da;
+      border-width: 10px 0 10px 10px;
+      border-color: transparent transparent transparent #e9e7da;
+    }
+    /* Add arrows to the right container (pointing left) */
+    .rightTIME::before {
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 22px;
+      width: 0;
+      z-index: 1;
+      left: 30px;
+      border: medium solid #e9e7da;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent #e9e7da transparent transparent;
+    }
+    /* Fix the circle for containers on the right side */
+    .rightTIME::after {
+      left: -15px;
+    }
+    .card{
+      background-color: #1d1d1d;
+    }
+    .card-header-mov{
+      padding: .5rem 0.5rem;
+    }
+    .card-body{
+      padding-bottom: 5%;
+    }
+    /* el contenido de la izq */
+    .contentTIME {
+      padding: 0px;
+      background-color: #1D1D1D;
+      border: solid 1px #fff;
+      position: relative;
+      width: 73%;
+      margin-left:27%;
+      margin-bottom: 5%;
+    }
+    /* el contenido de la der */
+    .contentTIMEright {
+      padding: 0px;
+      background-color: #1D1D1D;
+      border: solid 1px #fff;
+      position: relative;
+      width: 73%;
+      margin-right:27%;
+      margin-bottom: 5%;
+    
+    }
+    /* Media queries - Responsive timeline on screens less than 600px wide */
+    @media screen and (max-width: 600px) {
+      /* Place the timelime to the left */
+      .timeline::after {
+        position: absolute;
+        width: 5px;
+        height: 0;
+        background: linear-gradient(#fff, rgba(255,255,255,0));
+        top: 0;
+        left: 10px;
+        right: 0;
+        margin: auto;
+        transition: 1s;
+        z-index: 0;  }
+      
+      /* Full-width containers */
+      .containerTIME {
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+      }
+      
+      /* Make sure that all arrows are transparent */
+      .containerTIME::before {
+      left: 60px;
+      border-width: 0px;
+      border-color: transparent;
+      }
+      .containerTIME::after {
+      content: '';
+      position: absolute;
+      background-color: transparent;
+      border: transparent;
+      top: 15px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+      .contentTIME {
+      padding: 0px;
+      background-color: #e9e7da;
+      position: relative;
+      border-radius: 6px;
+      width: 80%;
+      margin-left:2%;
+      margin-bottom: 4%;
+    }
+    /* el contenido de la der */
+    .contentTIMEright {
+      padding: 0px;
+      background-color: #e9e7da;
+      position: relative;
+      border-radius: 6px;
+      width: 80%;
+      margin-left:19%;
+      margin-bottom: 4%;
+    
+    }
+      /* Make sure all circles are at the same spot */
+      .leftTIME::after, .rightTIME::after {
+      left: 15px;
+      }
+      /* Make all right containers behave like the left ones */
+      .rightTIME {
+      left: 0;
+      }
+    }
+    
+    .encabezadosMOVIL{
+      font-family: 'Anton', sans-serif;
+      letter-spacing: 0.2em; 
+      text-align:center;
+      font-size: 1.7em;
+      line-height: 1.2;
+      color: #cda34f;
+      padding-top: 0.6em;
+      padding-bottom: 0.1em;
+      font-weight: bold;
+    }
+    .formularioPC{
+      margin-left:5% !important; 
+      margin-right:5% !important;
+    }
+
+
+    .skill-block{
+      margin: 14px 0px;
+    }
+    .skill-shadow{
+      box-shadow: 0px 2px 2.5px 0px rgba(5,5,5,0.25), 0px 5px 5px 0px rgba(5,5,5,0.1);
+    }
+    .skill-shadow-noright{
+      box-shadow: 2px 3px 7px 0px  rgba(100, 100, 100, 0.836);
+    }
+    .skill-shadow-noleft{
+      box-shadow: 2px 3px 5px 0px rgba(100, 100, 100, 0.836);
+    }
+
+    .progress{
+      height: 3px;
+      background-color: #4d4d4d !important;
+    
+    }
+    .progress-bar{
+      height: 3px;
+      background: #08fdd8;
+    }
+    .block-grid{
+      max-width: 100% !important;
+      padding: 0;
+      margin: 0;
+    }
+    .col{
+      max-width: 100% !important;
+      padding: 0 !important;
+    }
+    .container-fluid{
+      padding: 0;
+    }
+
+    /*BOTONES*/
+    .btn{
+      box-shadow: 0 0 0 0 !important;
+      border-radius: 4px;
+      margin: 0px !important;
+    }
+    .btn:hover{
+      box-shadow: 0px 0px 0px 0px grey !important;
+    }
+    .btnTRAYECT{
+      box-shadow: 0 0 0 0 !important;
+      border-radius: 4px;
+    }
+    .btnTRAYECT:hover{
+      box-shadow: 0px 0px 0px 0px grey !important;
+    }
+
+    /*EFECTO DENTRO DE EFECTO*/
+    /*.efect1 {
+        max-width: 100%;
+        height: auto;
+    }
+    .efectmovil {
+      max-width: 100%;
+      height: auto;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .efectmovil:hover .efect1-s{
+        width: 95%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+    } 
+    .efect1:hover .efect1-s{
+        width: 95%;
+        position: absolute;
+    }
+    .efect1-s {
+        display: block;
+        width: 0px;
+        height: 320px;
+        position: absolute;
+        background: rgba(168, 168, 168, 0.295);
+        border-radius: 30px;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        transition: .8s;
+        transition-timing-function: cubic-bezier(0.45,0.2,0.45,1);
+    }*/
+
+    .logo:hover {
+        font-size:30px;
+        cursor: pointer;
+    }
+    
+    /* RESPONSIVE */
+    @media (min-width: 740px) {
+      .ocultarmovil{
+        display:none;
+      }
+    }
+    @media (max-width: 740px) {
+      html,
+      body{
+        height: 100vh;
+      }
+      header,
+      .jarallax {
+        height: 87vh;
+      }
+      .ocultarpc{
+        display:none;
+      }
+      .jarallax, .madera{
+        background-attachment: scroll !important;
+      }
+      h2{
+        font-size: 1.5rem;
+      }
+      h4{
+        font-size: 14px;
+      }
+      p{
+        font-size: 1rem !important;
+      }
+    }
+    @media (min-width: 800px) and (max-width: 850px) {
+      html,
+      body{
+        height: 100vh;
+      }
+      header,
+      .jarallax {
+        height: 70vh;
+      }
+    }
+    @media (min-width: 560px) and (max-width: 650px) {
+      header .jarallax h5 {
+        margin-bottom: 1.5rem !important;
+      }
+    }
+    @media (max-width: 450px) {
+        .btn-floating {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
+
+/* MENÚ HAMBURGUESA */
+
+.animated-icon2{
+  width: 30px;
+  height: 20px;
+  position: relative;
+  margin: 0px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  }
+  .animated-icon2 span{
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+  }
+  .animated-icon2 span {
+  background: #08fdd8;
+  }
+  .animated-icon2 span:nth-child(1) {
+  top: 0px;
+  }
+  .animated-icon2 span:nth-child(2), .animated-icon2 span:nth-child(3) {
+  top: 10px;
+  }
+  .animated-icon2 span:nth-child(4) {
+  top: 20px;
+  }
+  .animated-icon2.open span:nth-child(1) {
+  top: 11px;
+  width: 0%;
+  left: 50%;
+  }
+  .animated-icon2.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  }
+  .animated-icon2.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  }
+  .animated-icon2.open span:nth-child(4) {
+  top: 11px;
+  width: 0%;
+  left: 50%;
+  }
+
+
+body::-webkit-scrollbar {
+  width: 6px !important;     /* Tamaño del scroll en horizontal */
+  height: 8px !important;  /* Tamaño del scroll en  vertical*/
+  /* display:none; Ocultar scroll */
+  background:#1d1d1d !important;
+}
+body::-webkit-scrollbar-thumb {
+  width: 6px !important;     /* Tamaño del scroll en horizontal */
+  height: 8px !important;   /* Tamaño del scroll en vertical */
+  background:#08fdd8 !important;  /* Ocultar scroll */
+  border-radius:4px !important;
+  border-right: 2px solid #1d1d1d !important;
+}
+
+
+
+  
